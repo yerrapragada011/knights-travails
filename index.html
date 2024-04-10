@@ -40,7 +40,7 @@
           for (const [r, c] of nextMoves) {
             const newPos = [r, c]
 
-            if (!visited.had(newPos)) {
+            if (!visited.has(newPos)) {
               const newPath = [...path, newPos]
               queue.push(newPath)
               visited.add(newPos)
